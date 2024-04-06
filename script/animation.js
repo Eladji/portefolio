@@ -25,7 +25,7 @@ function getRandomColor() {
 
 function Particle(angle) {
   this.radius = getRandomRadius(minRadius, maxRadius);
-  this.x = canvas.width   + this.radius * Math.cos(angle);
+  this.x = canvas.width  + this.radius * Math.cos(this.angle);
   this.y = canvas.height / 2 + this.radius * Math.sin(angle);
   this.prevX = this.x;
   this.prevY = this.y;
